@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: 1000px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* столбы */
+    grid-template-rows: 70px 1.5fr 200px 20px;
+    /* строки */
+    grid-template-areas: "head head head " "main  main main " "foot  foot foot ";
+    border: 1px solid #000;
+}
+
+.grid-container__svg_lang {
+    margin-top: 20px;
+}
+
+.grid-container__svg {
+    display: flex;
+    justify-content: space-between;
+    color: blanchedalmond;
+    font-size: 25PX;
+}
+
+.grid-container__svg>svg {
+    color: blanchedalmond;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+main {
+    text-align: center;
+}
+
+.grid-container__textBem {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.grid-container>header {
+    grid-area: head;
+    background-color: #000000;
+}
+
+.grid-container>main {
+    grid-area: main;
+    background-color: #cecece;
+}
+
+.grid-container>footer {
+    grid-area: foot;
+    background-color: #cecece;
+}
+
+.grid-container__img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-container__img_item {
+    padding: 10px;
+    width: 15%;
+    font-size: 15pt;
+    font-weight: 300;
+}
+
+.grid-container__img_item>a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.grid-container__img_item>p {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.blocks-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: rgb(255, 255, 255);
+}
+
+.blocks-container__elem_1 {
+    height: 170px;
+    width: 50px;
+    background-color: black;
+}
+
+.blocks-container__elem_2 {
+    height: 140px;
+    width: 50px;
+    background-color: black;
+}
+
+.blocks-container__elem_3 {
+    height: 110px;
+    width: 50px;
+    background-color: black;
+}
+
+.blocks-container__underfoot {
+    font-size: 20px;
+    height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocks-container__underfoot>span>a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.blocks-container__underfoot_right {
+    text-align: right;
+}
+
+.blocks-container__underfoot_left {
+    text-align: left;
+}
